@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.chart {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .wrapper {
+        width: calc(100% - 100px);
+        margin-top: -50px;
+
+        canvas {
+            margin-left: -15px;
+        }
+    }
+}
+
+.box {
+	background-color: #4cba6f88;
+    padding: 1.5rem;
+    text-align: right;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    text-align: left;
+    max-width: 80%;
+    font-size: .9rem;
+    /* 20px */
+    font-weight: 200;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    height: 34px;
+    /* 10px 20px */
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+.inputfile + label {
+    color: #4cba6f;
+}
+
+.inputfile + label {
+    border: 1px solid #4cba6f;
+    background-color: white;
+    padding: 0;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    border-color: #4cba6fcc;
+}
+
+.inputfile + label span,
+.inputfile + label strong {
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+.inputfile + label span {
+    width: 450px;
+    min-height: 2em;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.inputfile + label strong {
+    height: 100%;
+    color: white;
+    background-color: #4cba6f;
+    display: inline-block;
+}
+
+.inputfile:focus + label strong,
+.inputfile + label:hover strong {
+    background-color: #4cba6fcc;
+}
